@@ -1,9 +1,9 @@
-# Даны периоды онлайн статуса для 20 пользователей. Вывести промежутки времени, в которые пользователи были онлайн
+
 
 import re
 from datetime import datetime
 
-fileIn = open('files/ex5_user_1_4.txt', 'r')
+fileIn = open('files/ex5_user_1.txt', 'r')
 user1, user2 = input().split()
 
 print(user1, user2)

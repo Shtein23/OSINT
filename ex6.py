@@ -1,9 +1,6 @@
 from pyrogram import Client
 
 
-# Настройте библиотеку для работы с Telegram и напишите программу, которая выведет количество сообщений в каждом канале
-# или супергруппе
-
 client = Client("my_account", api_id=API_ID, api_hash="API_HASH")
 client.start()
 dialogs = client.get_dialogs()

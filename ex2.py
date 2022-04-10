@@ -1,5 +1,3 @@
-# Перевести даты из одного формата в другой
-
 fileIn = open('files/ex2_user_1.log', 'r')
 
 old_split_date = []

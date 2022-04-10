@@ -1,19 +1,17 @@
 from datetime import datetime
 
-# Перевести даты из одного формата в другой
 
 def write_in_file(fileOut, a, value):
-    fileOut.write(str(datetime.fromtimestamp(a).strftime("%Y-%m-%d %H:%M:%S") + " " + value + "\n"))
+    fileOut.write(f'{datetime.fromtimestamp(a).strftime("%Y-%m-%d %H:%M:%S")} {value}\n')
 
 
-online = []
 fileIn = open('files/ex3_user_1.txt', 'r')
 x = fileIn.read().split("\n")
-x.sort()
 fileIn.close()
-for y in x:
-    j = y.split(" ")
-    online.append([int(j[0]), int(j[1])])
+
+online = [[int(y.split(" ")[0]), int(y.split(" ")[1])] for y in sorted(x)]
+
+
 k = 0
 i = online[k][0]
 count = len(online)
